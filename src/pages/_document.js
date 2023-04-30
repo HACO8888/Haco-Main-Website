@@ -5,6 +5,9 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="UTF-8" />
+        <meta name="theme-color" content="#19212A" />
+
+        
         {/*<!-- Primary Meta Tags -->*/}
         <meta name="title" content="Haco Developer" />
         <meta
@@ -32,7 +35,7 @@ export default function Document() {
         />
         <meta property="twitter:image" content="/images/banner.png" />
       </Head>
-      <body>
+      <body className='max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0'>
         <Main />
         <NextScript />
       </body>

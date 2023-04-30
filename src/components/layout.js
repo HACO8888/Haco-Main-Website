@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "@/components/navbar";
 
 export default function Layout({ children }) {
     return (
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
                 <meta name="keyword" content="haco developer" />
             </Head>
             <div>
+                <Navbar />
                 {children}
             </div>
         </>

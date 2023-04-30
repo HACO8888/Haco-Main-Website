@@ -6,13 +6,25 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#c6e3ff",
+          "secondary": "#7580ce",
+          "accent": "#3fe289",
+          "neutral": "#19212A",
+          "base-100": "#343546",
+          "info": "#6DAAD0",
+          "success": "#42D7C5",
+          "warning": "#F6BB5A",
+          "error": "#E56C7A",
+        },
+      },
+    ],
+  },
+
+  plugins: [require('daisyui'),],
 }
