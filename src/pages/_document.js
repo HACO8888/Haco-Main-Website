@@ -7,7 +7,7 @@ export default function Document() {
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#19212A" />
 
-        
+
         {/*<!-- Primary Meta Tags -->*/}
         <meta name="title" content="Haco Developer" />
         <meta
