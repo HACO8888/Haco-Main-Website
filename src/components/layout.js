@@ -12,7 +12,9 @@ export default function Layout({ children }) {
             </Head>
             <div>
                 <Navbar />
-                {children}
+                <div className="mt-10 max-h-[calc(100vh-125px)] min-h-[calc(100vh-125px)]">
+                    {children}
+                </div>
             </div>
         </>
     );
