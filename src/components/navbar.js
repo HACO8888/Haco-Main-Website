@@ -13,7 +13,7 @@ export default function Navbar() {
                 <div className="flex-1">
                     <div className="flex">
                         <div className="flex-initial m-auto">
-                            <Image src="/images/logo.png" width={40} height={40} alt="logo" priority="true"  />
+                            <Image src="/images/logo.png" width={40} height={40} alt="logo" priority="true" />
                         </div>
                         <button className="text-xl normal-case btn btn-ghost" onClick={() => router.push("/")}>Haco Developer</button>
                     </div>
@@ -42,27 +42,27 @@ export default function Navbar() {
                             </button>
                         </div>
                         <nav className="fixed flex flex-col w-full h-full mt-8">
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={() => router.push("/")}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/"), () => setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     HOME
                                 </div>
                             </button>
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={() => router.push("/projects")}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/projects"), () => setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     PROJECTS
                                 </div>
                             </button>
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={() => router.push("/resumes")}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/resumes"), () => setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     RESUMES
                                 </div>
                             </button>
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={() => router.push("/contact")}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/contact"), () => setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     CONTACT
                                 </div>
                             </button>
-                            <button>
+                            <button onClick={() => setMenuShow(!menuShow)}>
                                 <Link href="https://tech.haco.tw/" target="_blank" className="text-2xl font-bold tracking-widest text-text">
                                     <div className="w-full px-12 py-4">
                                         OLD SITE
