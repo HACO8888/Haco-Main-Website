@@ -4,7 +4,7 @@ export default function HomeSocials() {
     return (
         <>
             <h1 className="m-auto mt-5 mb-5 text-3xl text-center">Social Links</h1>
-            <pre className="block w-full overflow-auto leading-6">
+            <pre className="block w-full overflow-auto leading-6 scrollbar-hide">
                 <div className="pb-5 overflow-visible text-center">
                     <code className="inline w-full gap-6 leading-6">
                         <SocialIcon url="mailto:jasonytonlinecomeandsee@gmail.com" target="_blank" />

@@ -11,12 +11,11 @@ export default function Layout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="keyword" content="haco developer" />
             </Head>
-            <div className="select-none">
+            <div className="overflow-hidden select-none">
                 <Navbar />
-                <div className="mt-5 max-h-[calc(100vh-125px)] min-h-[calc(100vh-125px)]">
-                    {children}
+                <div className="mt-5 max-h-[calc(100vh-125px)] min-h-[calc(100vh-125px)] mb-[20px] rounded-xl overflow-scroll overflow-x-hidden scrollbar-hide">
+                        {children}
                 </div>
-                {/* <Footer /> */}
             </div>
         </>
     );

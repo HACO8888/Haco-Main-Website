@@ -42,22 +42,22 @@ export default function Navbar() {
                             </button>
                         </div>
                         <nav className="fixed flex flex-col w-full h-full mt-8">
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/"), () => setMenuShow(!menuShow))}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/") && setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     HOME
                                 </div>
                             </button>
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/projects"), () => setMenuShow(!menuShow))}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/projects") && setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     PROJECTS
                                 </div>
                             </button>
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/resumes"), () => setMenuShow(!menuShow))}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/resumes") && setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     RESUMES
                                 </div>
                             </button>
-                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/contact"), () => setMenuShow(!menuShow))}>
+                            <button className="text-2xl font-bold tracking-widest text-text" onClick={(() => router.push("/contact") && setMenuShow(!menuShow))}>
                                 <div className="w-full px-12 py-4">
                                     CONTACT
                                 </div>
