@@ -3,8 +3,7 @@ import { SocialIcon } from "react-social-icons";
 export default function HomeSocials() {
     return (
         <>
-            <h1 className="m-auto text-3xl text-center">Social Links</h1>
-            <hr className="my-2" />
+            <h1 className="m-auto mt-5 mb-5 text-3xl text-center">Social Links</h1>
             <pre className="block w-full overflow-auto leading-6">
                 <div className="pb-5 overflow-visible text-center">
                     <code className="inline w-full gap-6 leading-6">
